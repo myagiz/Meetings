@@ -35,7 +35,7 @@ namespace WebUI.Controllers
                 TokenService tokenService = new TokenService(_configuration);
                 Token token = _tokenService.CreateAccessToken(getUser);
                 await _userService.GenerateUserRefreshToken(getUser.Id, token.RefreshToken, DateTime.Now, token.Expiration);
-                return View(token);
+                return RedirectToAction("Index", "Room");
             }
 
             return View(model);

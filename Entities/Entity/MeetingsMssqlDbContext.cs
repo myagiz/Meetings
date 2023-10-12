@@ -6,13 +6,13 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Entities.Entity
 {
-    public partial class MeetingMssqlDbContext : DbContext
+    public partial class MeetingsMssqlDbContext : DbContext
     {
-        public MeetingMssqlDbContext()
+        public MeetingsMssqlDbContext()
         {
         }
 
-        public MeetingMssqlDbContext(DbContextOptions<MeetingMssqlDbContext> options)
+        public MeetingsMssqlDbContext(DbContextOptions<MeetingsMssqlDbContext> options)
             : base(options)
         {
         }
